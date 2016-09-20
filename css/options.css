@@ -9,6 +9,13 @@ body {
   margin: 0 auto;
 }
 
+#message {
+  background-color: yellow;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+
 h1 {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -63,8 +70,9 @@ button {
   margin-left: 20px;
 }
 
-button:hover {
+button:hover, button:focus {
   border: 1px solid #999;
+  cursor: pointer;
 }
 
 button:active {
