@@ -1,0 +1,15 @@
+html, body, ul, li, a, h1, h2, h3, div, form, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  font: inherit;
+  vertical-align: inherit;
+  text-align: inherit;
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+
+  background: transparent;
+}

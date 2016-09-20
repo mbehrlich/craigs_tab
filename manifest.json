@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "craigstab",
+  "description": "This extension allows users to specify search options for craigslist. Any results from that day will be posted on the user's new tab page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "views/menu.html"
+  },
+  "options_page": "views/options.html",
+  "chrome_url_overrides": {
+    "newtab": "views/new_tab.html"
+  },
+  "permissions": [
+    "activeTab",
+    "http://*.craigslist.org/",
+    "https://*.craigslist.org/"
+  ]
+}
