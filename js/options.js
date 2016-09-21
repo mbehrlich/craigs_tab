@@ -32,8 +32,10 @@ function populateRules(rules, store) {
   Object.keys(store.rules).forEach((rule) => {
     let newNode = document.createElement("li");
     newNode.className = "list-rule";
+    let nodeP = document.createElement("p");
     let nodeText = document.createTextNode(rule);
-    newNode.appendChild(nodeText);
+    nodeP.appendChild(nodeText);
+    newNode.appendChild(nodeP);
     let deleteButton = document.createElement("button");
     deleteButton.name = rule;
     deleteButton.addEventListener("click", (e) => {
@@ -60,5 +62,5 @@ function message(msg) {
   let div = document.getElementById('message');
   div.innerHTML = msg;
   div.style.display = "block";
-  window.setTimeout(() => {div.style.display = "none"}, 10000)
+  window.setTimeout(() => {div.style.display = "none"}, 5000);
 }
