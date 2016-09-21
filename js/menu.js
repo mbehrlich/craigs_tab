@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   addRule.addEventListener("click", () => {
     chrome.tabs.getSelected((tab) => {
       let url = tab.url;
-      let pattern = new RegExp("\.craigslist\.org/search");
+      let pattern = new RegExp("^https?://.*\.craigslist\.org/search");
       if (pattern.test(url)) {
         chrome.storage.sync.get('rules', (store) => {
           let newRules = store.rules;

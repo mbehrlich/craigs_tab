@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   submit.addEventListener("click", (e) => {
     e.preventDefault();
     let url = document.getElementById('rule');
-    let pattern = new RegExp("\.craigslist\.org/search");
+    let pattern = new RegExp("^https?://.*\.craigslist\.org/search");
     if (pattern.test(url.value)) {
       chrome.storage.sync.get('rules', (store) => {
         let newRules = store.rules;
