@@ -38,16 +38,23 @@ h1 {
 
 #rules li {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
 #rules p {
   display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  overflow: hidden;
 }
 
 #rules button {
   display: inline-block;
+  width: 100px;
+  text-align: center;
 }
 
 p {
