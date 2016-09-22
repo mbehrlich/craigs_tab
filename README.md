@@ -8,7 +8,7 @@ day that match the user's specifications are then posted on the new tab page (li
 
 [craigstab webstore page]()
 
-![./docs/craigstab.png]
+![craigstab][./docs/craigstab.png]
 
 ## Technologies
 
