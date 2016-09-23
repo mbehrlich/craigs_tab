@@ -6,7 +6,7 @@ an options page (accessible from the craigstab toolbar icon), or save any craigs
 is currently open (also accessible from the craigstab icon). Any craigslist post made within the last
 day that match the user's specifications are then posted on the new tab page (limited to 100 results).
 
-[craigstab webstore page]()
+[craigstab webstore page](https://chrome.google.com/webstore/detail/craigstab/kdgbcogcnaebkjpanokfcgclahodnedh)
 
 ![craigstab](./docs/craigstab.png)
 
