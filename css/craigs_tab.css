@@ -27,6 +27,7 @@ h1 {
 h3 {
   font-size: 24px;
   margin-top: 20px;
+  padding-left: 5px;
 }
 
 .rule-list {
@@ -36,4 +37,11 @@ h3 {
 .rule {
   margin-left: 10px;
   margin-top: 5px;
+}
+
+p {
+  display: block;
+  max-width: 500px;
+  padding: 5px;
+  margin: 10px auto;
 }

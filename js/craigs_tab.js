@@ -13,15 +13,19 @@ $(document).ready(() => {
         url: newRule,
         method: "GET",
         success: (data) => {
-          console.log($(data)[1]);
           $(`#title${idx}`).append($(data)[1].innerHTML);
           $(`#rule-list${idx}`).append($(data).find(".hdrlnk"));
           $(`#rule-list${idx} .hdrlnk`).each((idx, el) => {
-            $(el).attr("href", "http://craigslist.org" + $(el).attr("href"));
+            if ($(el).attr("href").slice(0, 4) !== "http") {
+              $(el).attr("href", "http://craigslist.org" + $(el).attr("href"));
+            }
             $(el).wrap("<li class='rule'></li>")
           });
         }
       });
     });
+    if (Object.keys(store.rules).length == 0) {
+      $("#rules").append('<p>To add daily results from craigslist, navigate to the craigslist search page you wish to save, click on the peace sign icon in your toolbar, and select "add rule". Rules can be deleted from the options menu.</p>');
+    }
   });
 });
