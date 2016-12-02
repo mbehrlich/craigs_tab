@@ -3,7 +3,7 @@
 
   "name": "craigstab",
   "description": "The new tab page is replaced by a list of craigslist results from searches specified by the user",
-  "version": "1.1",
+  "version": "1.1.1",
   "icons": {
     "16": "assets/icon.png",
     "48": "assets/icon.png",

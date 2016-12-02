@@ -16,10 +16,13 @@ $(document).ready(() => {
           $(`#title${idx}`).append($(data)[1].innerHTML);
           $(`#rule-list${idx}`).append($(data).find(".hdrlnk"));
           $(`#rule-list${idx} .hdrlnk`).each((idx, el) => {
-            if ($(el).attr("href").slice(0, 4) !== "http") {
+            if ($(el).attr("href").slice(0, 4) !== "http" && $(el).attr("href").slice(0, 2) !== "//") {
               $(el).attr("href", "http://craigslist.org" + $(el).attr("href"));
+            } else {
+
+              $(el).attr("href", "http:" + $(el).attr("href"));
             }
-            $(el).wrap("<li class='rule'></li>")
+            $(el).wrap("<li class='rule'></li>");
           });
         }
       });
